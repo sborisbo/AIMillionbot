@@ -2,7 +2,7 @@ name: Auto Post to Telegram
 
 on:
   schedule:
-    - cron: '47 */2 * * *'
+    - cron: '47 */4 * * *'
   workflow_dispatch:
 
 jobs:
