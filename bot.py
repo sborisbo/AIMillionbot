@@ -79,7 +79,7 @@ def main():
     articles = fetch_recent_articles(hours=8)
     new_articles = [a for a in articles if a["id"] not in posted]
 
-        for article in new_articles[:1]:
+    for article in new_articles[:1]:
         print(f"Posting: {article['title']}")
         text = rewrite_with_claude(article)
         post_to_telegram(text)
